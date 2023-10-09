@@ -9,23 +9,32 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: rgb(255, 94, 0);
   color: white;
 }
 
 .menu-items ul {
   list-style: none;
   display: flex;
-  padding: 0;
 }
 
 .menu-items ul li {
-  margin: 0 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
-.icons img {
+.icons i {
   margin-left: 15px;
-  width: 30px;
-  height: 30px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.padding {
+  margin-right: 300px;
+  margin-left: 300px;
 }
