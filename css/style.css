@@ -38,3 +38,74 @@ body {
   margin-right: 300px;
   margin-left: 300px;
 }
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.product {
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+}
+
+.product-images {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.product-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product .hover-image {
+  opacity: 0;
+}
+
+.product:hover .default-image {
+  opacity: 0;
+}
+
+.product:hover .hover-image {
+  opacity: 1;
+}
+
+.product-description {
+  padding: 15px;
+  text-align: start;
+}
+
+.product-description h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.product-description p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.product-description button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-description button:hover {
+  background-color: #555;
+}
