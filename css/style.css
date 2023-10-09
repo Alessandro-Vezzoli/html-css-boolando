@@ -40,15 +40,21 @@ body {
 }
 .products {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 150px !important;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px; /* Aggiungi un margine tra le colonne se desideri */
 }
 
 .product {
-  width: 250px;
-  margin: 10px;
-  text-align: center;
+  width: 100%; /* La larghezza del singolo prodotto è ora del 100% della larghezza della colonna */
+  height: 100%; /* Altezza del 100% della colonna */
+  text-align: left;
+  margin-bottom: 20px; /* Aggiungi un margine inferiore tra i prodotti se desideri */
 }
 
 .product-images {
@@ -79,33 +85,49 @@ body {
 .product:hover .hover-image {
   opacity: 1;
 }
-
-.product-description {
-  padding: 15px;
-  text-align: start;
+.products p {
+  margin: 5px !important;
+}
+.products h4 {
+  margin: 5px !important;
 }
 
-.product-description h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
+.price {
+  color: red;
 }
 
-.product-description p {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 15px;
+.offert {
+  text-decoration: line-through;
 }
-
-.product-description button {
-  background-color: #333;
+.footer {
+  background-color: black;
   color: white;
-  border: none;
+  justify-content: space-between;
   padding: 10px 20px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-.product-description button:hover {
-  background-color: #555;
+.left-content {
+  float: left;
+  padding-left: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.right-content {
+  float: right;
+  padding-right: 60px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer {
+  margin-top: 1000px;
+}
+
+.social {
+  width: 10px;
+  padding-bottom: 5px;
 }
