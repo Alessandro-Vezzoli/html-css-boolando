@@ -4,22 +4,28 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.backMenu {
+  background-color: rgb(255, 94, 0);
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgb(255, 94, 0);
+  margin-right: 300px;
+  margin-left: 300px;
   color: white;
 }
 
 .menu-items ul {
   list-style: none;
   display: flex;
+  padding-left: 0px !important;
 }
 
 .menu-items ul li {
-  margin-left: 10px;
+  margin-left: 0px;
   margin-right: 10px;
   cursor: pointer;
 }
@@ -40,27 +46,21 @@ body {
 }
 .products {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 50px;
-  padding-bottom: 150px !important;
-}
-
-.column {
-  flex: 1;
-  margin: 0 10px; /* Aggiungi un margine tra le colonne se desideri */
+  margin-top: 50px;
+  margin-bottom: 90px;
 }
 
 .product {
-  width: 100%; /* La larghezza del singolo prodotto è ora del 100% della larghezza della colonna */
-  height: 100%; /* Altezza del 100% della colonna */
-  text-align: left;
-  margin-bottom: 20px; /* Aggiungi un margine inferiore tra i prodotti se desideri */
+  width: 30%; /* Imposta la larghezza del singolo prodotto in modo che ci siano 3 prodotti in una riga */
+  margin-bottom: 50px;
 }
 
 .product-images {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -99,35 +99,34 @@ body {
 .offert {
   text-decoration: line-through;
 }
-.footer {
+
+.backfooter {
   background-color: black;
-  color: white;
+}
+.footer {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  margin-right: 300px;
+  margin-left: 300px;
+  color: white;
 }
 
 .left-content {
-  float: left;
-  padding-left: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .right-content {
-  float: right;
-  padding-right: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
-footer {
-  margin-top: 1000px;
-}
-
 .social {
-  width: 10px;
-  padding-bottom: 5px;
+  width: 20px; /* Imposta la larghezza dell'icona social */
+  height: 20px; /* Imposta l'altezza dell'icona social */
+  border: 2px solid white; /* Aggiunge un bordo bianco di 2 pixel */
+  background-color: white;
+  border-radius: 20%; /* Rende i bordi arrotondati per creare una forma circolare */
+  margin-right: 5px; /* Aggiunge uno spazio tra le icone social */
 }
